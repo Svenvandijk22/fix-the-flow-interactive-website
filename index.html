@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buurtcampus website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://webtins.github.io/look-and-feel-styleguide/styleguide-buurtcampuskrant.css">
+    <script src="java.js" defer></script>
+</head>
+
+
+<header class="navigatie">
+    <div class="linksNav">
+        
+        <img class="logo" src="assets/Buurtcampus_krant_logo.svg" alt="" aria-label="logo_buurtcampus">
+    </div>
+    <img class="wolkje wolkje1" src="assets/wolkje.png">
+    <img class="wolkje wolkje2" src="assets/wolkje.png">
+
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+   
+    <ul>
+
+        <li><a href="">Nieuw-west</a></li>
+        <li><a href="">Oost</a></li>
+        <li><a href="">Zuid-Oost</a></li>
+
+    </ul>
+</header>
+
+<body>
+
+    <section class="onderkantHeader">
+     
+    <img class="labelOost" src="assets/Oost_Buurtcampus.png">
+    <div class="OverzichtFilteren"> 
+     <ul class="overzicht">
+        <li> <input type="checkbox"><p>Bewoners</p></li>
+        <li> <input type="checkbox"> <p>De wijk</p> </li>
+        <li> <input type="checkbox"> <p>Docent</p></li>
+        <li> <input type="checkbox"> <p>Studenten</p></li>
+        <li> <input type="checkbox"> <p>Partner</p></li>
+        <li> <button class="buttonOverzicht">toepassen</button></li>
+     </ul>
+    </div>
+   
+     <button class="filterDoelgroep"><img class="icon" src="assets/pijltje_.svg">Wie bent u?</button>
+
+    </section>
+
+
+    <main class="gridlayout">
+        <section class="laatsteNieuws">
+            <h1 class="koptekst heading-2"> Laatste Nieuws</h1>
+            <img class="laatste-nieuws-afbeelding" src="assets/buurtcampus_nieuwelook.jpg" alt="">
+            <h2 class="koptekst3">Nieuwe look Buurtcampus</h2>
+            <span class="locatie-label-oost">Oost</span>
+            <p class="tekst">Woningcorporaties, zorg
+                en welzijnsorganisaties hebben de handen ineengeslagen om het
+                project Lang Leven Thuisflats en
+                buurten te realiseren. Samen met
+                bewoners(organisaties)
+                worden bestaande seniorencomplexen ontwikkeld tot collectieve woonvormen, waar
+                ouderen langer zelfstandig kunnen blijven wonen. Onder de paraplu van Werkplaats Sociaal
+                Domein Ouderen voert de HvA samen met het..</p>
+            <a href="artikel.html" class="lees-meer_wit"> Lees meer <span class="arrow2">→</span></a>
+        </section>
+
+
+        <section class="nieuwe_look_section">
+
+            <h2 class="koptekst2"> Nieuwe look buurtcampus</h2>
+            <img class="nieuwe_look" src="assets/buurtcampus_nieuwelook.jpg" alt="">
+
+            <span class="locatie-label-Zuid-oost">ZuidOost</span>
+            <p class="tekstPaarsblauw">Woningcorporaties, zorg
+                en welzijnsorganisaties hebben de handen ineengeslagen om het
+                project Lang Leven Thuisflats en
+                buurten te realiseren. Samen met
+                bewoners(organisaties)
+                worden bestaande seniorencomplexen ontwikkeld tot collectieve woonvormen, waar
+                ouderen langer zelfstandig kunnen blijven wonen. Onder de paraplu van Werkplaats Sociaal
+                Domein Ouderen voert de HvA samen met het..</p>
+            <a href="artikel.html" class="lees-meer"> Lees meer <span class="arrow">→</span></a>
+        </section>
+
+
+        <section class="section_3">
+            <div class="LinksFlexSection3">
+                <h2 class="koptekst2"> Nieuwe look buurtcampus</h2>
+                <img class="nieuwe_look" src="assets/buurtcampus_nieuwelook.jpg" alt="">
+            </div>
+
+            <div class="RechtsFlexSection3">
+                <span class="locatie-label-Zuid-oost">ZuidOost</span>
+                <p class="tekstPaarsblauw">Woningcorporaties, zorg
+                    en welzijnsorganisaties hebben de handen ineengeslagen om het
+                    project Lang Leven Thuisflats en
+                    buurten te realiseren. Samen met
+                    bewoners(organisaties)
+                    worden bestaande seniorencomplexen ontwikkeld tot collectieve woonvormen, waar
+                    ouderen langer zelfstandig kunnen blijven wonen. Onder de paraplu van Werkplaats Sociaal
+                    Domein Ouderen voert de HvA samen met het..</p>
+                <a href="artikel.html" class="lees-meer"> Lees meer <span class="arrow">→</span></a>
+            </div>
+        </section>
+        
+        <form class="nieuwsbrief">
+            <h2 class="titel-nieuwsbrief">nieuwsbrief!</h2>
+            <label class="textlabel">
+                Meld u aan voor de Buurtcampus nieuwsbrief!
+                <input type="email" class="textinput" placeholder="Vul uw e-mail in... ">
+            </label>
+
+            <label class="buttonlabel">
+                <input type="button" class="button_form" value="Submit">
+            </label>
+        </form>
+        
+    </main>
+</body>
+</html>

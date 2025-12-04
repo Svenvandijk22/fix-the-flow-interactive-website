@@ -1,0 +1,556 @@
+body {
+    margin: 0;
+}
+
+.navigatie {
+    
+  display: flex;
+    background-color: #b4bdd0;
+
+    border: 2px solid #dee3ed;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 160px;
+
+    @media (min-width: 678px) {
+        margin: 50px 50px;
+        position: relative;
+        overflow: hidden;
+        contain: layout;
+    }
+}
+
+.logo {
+    width: 250px;
+    height: 90px;
+    margin-top: 15px;
+    padding-left: 10px;
+    z-index: 0;
+        @media (min-width: 678px) {
+            width: 300px;
+    height: 120px;
+    margin-top: 15px;
+    padding-left: 80px;
+    z-index: 0;
+       }
+}
+
+
+
+
+.linksNav {
+    display: flex;
+    z-index: 1;
+
+    flex-direction: column;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+    padding-top: 50px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hamburger div {
+    height: 4px;
+    margin: 6px 0;
+    background: black;
+}
+
+#menuToggle:checked~ul {
+    display: block;
+}
+
+.navigatie ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-top: 70px;
+      
+    }
+}
+
+.navigatie a {
+    text-decoration: none;
+    margin-left: 170px;
+    color: #333467;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@keyframes wolk {
+    100% {
+        left: 100%;
+    }
+}
+
+.wolkje {
+    position: absolute;
+    left: -80px;
+
+    width: 80px;
+    height: 40px;
+
+    animation-name: wolk;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    z-index: -10;
+
+    pointer-events: none;
+
+    .navigatie:hover & {
+        animation-play-state: running;
+    }
+}
+
+.wolkje1 {
+    top: 20px;
+    animation-duration: 20s;
+    animation-delay: -4s;
+}
+
+.wolkje2 {
+    top: 60px;
+    animation-duration: 29s;
+    animation-delay: -26s;
+}
+
+.labelOost {
+    width: 200px ;
+    height: 110px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.locatie-label-oost {
+    margin-top: 10px;
+    font-family: Arial;
+    background-color: var(--mosGroen);
+    color: #333467;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 4px 12px;
+    /* Binnenruimte */
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 8px;
+    /* Ruimte tussen label en titeltekst */
+    vertical-align: middle;
+    /* Lijnt netjes uit naast de titel */
+}
+
+.locatie-label-Zuid-oost {
+    margin-top: 10px;
+    font-family: Arial;
+    background-color: var(--zee);
+    color: white;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 4px 12px;
+    /* Binnenruimte */
+    border-radius: 2px;
+    /* Kleine hoekafronding */
+    display: inline-block;
+    /* Zorgt dat het blokje de juiste maat heeft */
+    margin-right: 8px;
+    /* Ruimte tussen label en titeltekst */
+    vertical-align: middle;
+    /* Lijnt netjes uit naast de titel */
+}
+
+.koptekst {
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+@media (min-width: 678px) {
+    .koptekst {
+        color: white;
+        font-size: 55px;
+        padding-top: 20px;
+    }
+}
+
+.koptekst2 {
+    color: var(--paarsBlauw);
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.koptekst3 {
+    color: white;
+    font-size: 25px;
+}
+
+.tekst {
+    color: white;
+    font-size: 18px;
+    line-height: 1.4rem;
+}
+
+@media (min-width: 678px) {
+    .tekst {
+        color: white;
+        width: 650px;
+    }
+}
+
+.tekstPaarsblauw {
+    color: var(--paarsBlauw);
+    font-size: 18px;
+    line-height: 1.4rem;
+}
+
+@media (min-width: 678px) {
+    .tekstPaarsblauw {
+        color: var(--paarsBlauw);
+        width: 500px;
+    }
+}
+
+.lees-meer_wit {
+    font-family: arial;
+    display: inline-flex;
+    /* tekst + pijl netjes naast elkaar */
+    align-items: center;
+    /* verticaal centreren */
+    gap: 8px;
+    /* ruimte tussen tekst en pijl */
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    /* animatie bij hover */
+}
+
+.lees-meer_wit:hover {
+    color: white;
+
+    /*eerst had ik een oranje accentkleur toegevoegd wat niet werkte kwa color contrast*/
+}
+
+.arrow2 {
+    font-size: 1.5rem;
+    /* zelfde grootte als tekst */
+    transition: transform 0.2s ease;
+}
+
+.lees-meer_wit:hover .arrow2 {
+    transform: translateX(8px);
+    /* pijl schuift iets naar rechts bij hover */
+}
+
+.lees-meer {
+    font-family: arial;
+    display: inline-flex;
+    /* tekst + pijl netjes naast elkaar */
+    align-items: center;
+    /* verticaal centreren */
+    gap: 8px;
+    /* ruimte tussen tekst en pijl */
+    font-size: 20px;
+    text-decoration: none;
+    color: #333467;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    /* animatie bij hover */
+}
+
+.lees-meer:hover {
+    color: var(--paarsBlauw);
+
+    /*eerst had ik een oranje accentkleur toegevoegd wat niet werkte kwa color contrast*/
+}
+
+.arrow {
+    font-size: 1.5rem;
+    /* zelfde grootte als tekst */
+    transition: transform 0.2s ease;
+}
+
+.lees-meer:hover .arrow {
+    transform: translateX(8px);
+    /* pijl schuift iets naar rechts bij hover */
+}
+
+
+.onderkantHeader {
+
+   
+
+     @media (min-width: 768px) {
+         display: flex;
+    justify-content: space-between;
+       
+      
+    }
+}
+
+.OverzichtFilteren {
+    
+    opacity: 0;
+    transition: 0.5s;
+     width: 55%;
+
+}
+
+.OverzichtFilteren-visible {
+   
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 2px grey;
+    margin-bottom: 30px;
+    color: #333467;
+   
+    opacity: 1;
+
+    @media (min-width: 678px) {
+        margin-left: 120px;
+    }
+}
+
+.overzicht {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 30px;
+    padding-left: 50px;
+}
+
+.overzicht li {
+    display: flex;
+    font-size: 20px;
+}
+
+.buttonOverzicht {
+    height: 30px;
+    margin-top: 13px;
+}
+
+
+
+
+
+.gridlayout {
+    @media (min-width: 678px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.filterDoelgroep {
+
+
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    font-family: arial;
+    background-color: var(--torenOranje);
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 26px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 60px;
+    cursor: pointer;
+
+    @media (min-width: 678px) {
+        margin-left: 50px;
+    }
+}
+
+.filterDoelgroep:hover{
+
+        background-color: #333467;
+    }
+
+.icon {
+    width: 32px;
+    height: 22px;
+}
+
+.laatsteNieuws {
+    padding-left: 30px;
+    background-color: var(--paarsBlauw);
+    height: 920px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    border-radius: 10px;
+    border: 1px solid #dee3ed;
+
+    @media (min-width: 678px) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+}
+
+.nieuwe_look_section {
+    padding-left: 30px;
+    background-color: var(--kauwgomRoze);
+    height: 730px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    border-radius: 10px;
+    border: 1px solid #dee3ed;
+
+    @media (min-width: 678px) {
+        grid-column-start: 5;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+}
+
+.section_3 {
+    background-color: var(--luchtBlauw);
+    padding-left: 30px;
+    border: 1px solid #dee3ed;
+
+    height: 700px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+    @media (min-width: 678px) {
+        display: flex;
+        height: 500px;
+
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.RechtsFlexSection3 {
+    @media (min-width: 678px) {
+        margin-left: 20px;
+        margin-top: 110px;
+    }
+}
+
+.nieuwe_look {
+    width: 240px;
+    height: 160px;
+}
+
+@media (min-width: 678px) {
+    .nieuwe_look {
+        width: 500px;
+        height: 340px;
+    }
+}
+
+.laatste-nieuws-afbeelding {
+    width: 240px;
+    height: 160px;
+}
+
+@media (min-width: 678px) {
+    .laatste-nieuws-afbeelding {
+        width: 700px;
+        height: 430px;
+    }
+}
+
+/*code nieuwsbrief*/
+
+.nieuwsbrief {
+    background-color: var(--paarsBlauw);
+    height: 300px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    @media (min-width: 678px) {
+        grid-column-start: 3;
+        grid-column-end: -1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+.titel-nieuwsbrief {
+    color: white;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.textlabel {
+    flex-direction: column;
+    color: white;
+    display: flex;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textinput {
+    border-radius: 30px;
+    border-color: white;
+    border-style: solid;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.buttonlabel {
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button_form {
+    margin-top: 20px;
+    border-radius: 30px;
+    border-color: var(--torenOranje);
+    border-style: solid;
+    color: white;
+    font-size: 16px;
+    background-color: var(--torenOranje);
+
+    &:hover {
+        background-color: white;
+        color: #333467;
+    }
+}
