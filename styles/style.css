@@ -138,8 +138,13 @@ body {
 .labelOost {
     width: 200px ;
     height: 110px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-bottom: 50px;
+
+     @media (min-width: 768px) {
+        margin-left: 50px;
+       
+    }
 }
 
 .locatie-label-oost {
@@ -314,7 +319,12 @@ body {
     
     opacity: 0;
     transition: 0.5s;
-     width: 55%;
+     width: 100%;
+
+      @media (min-width: 678px) {
+          width: 55%;
+       
+    }
 
 }
 
@@ -336,10 +346,19 @@ body {
 .overzicht {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20px;
+    padding-left: 0px;
+
+      @media (min-width: 678px) {
+            grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-left: 30px;
     padding-left: 50px;
+
+       
+    }
 }
 
 .overzicht li {
@@ -349,7 +368,17 @@ body {
 
 .buttonOverzicht {
     height: 30px;
-    margin-top: 13px;
+    margin-top: 8px;
+    background-color: var(--torenOranje);
+    border-style:none;
+    color: white;
+    font-size: 19px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 8px;
+
 }
 
 
@@ -367,6 +396,7 @@ body {
 .filterDoelgroep {
 
 
+    margin-left: 30px;
 
     margin-top: 30px;
     margin-bottom: 30px;
