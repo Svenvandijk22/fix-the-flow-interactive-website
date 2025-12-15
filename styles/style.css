@@ -3,8 +3,8 @@ body {
 }
 
 .navigatie {
-    
-  display: flex;
+
+    display: flex;
     background-color: #b4bdd0;
 
     border: 2px solid #dee3ed;
@@ -29,13 +29,14 @@ body {
     margin-top: 15px;
     padding-left: 10px;
     z-index: 0;
-        @media (min-width: 678px) {
-            width: 300px;
-    height: 120px;
-    margin-top: 15px;
-    padding-left: 80px;
-    z-index: 0;
-       }
+
+    @media (min-width: 678px) {
+        width: 300px;
+        height: 120px;
+        margin-top: 15px;
+        padding-left: 80px;
+        z-index: 0;
+    }
 }
 
 
@@ -85,7 +86,7 @@ body {
         flex-direction: row;
         gap: 20px;
         padding-top: 70px;
-      
+
     }
 }
 
@@ -136,14 +137,16 @@ body {
 }
 
 .labelOost {
-    width: 200px ;
+    width: 200px;
     height: 110px;
-    margin-left: 30px;
-    margin-bottom: 50px;
 
-     @media (min-width: 768px) {
-        margin-left: 50px;
-       
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+
+    @media (min-width: 768px) {
+        margin-right: 50px;
+
     }
 }
 
@@ -152,7 +155,7 @@ body {
     font-family: Arial;
     background-color: var(--mosGroen);
     color: #333467;
-    text-transform: lowercase;
+    
     font-size: 20px;
     font-weight: 550;
     padding: 4px 12px;
@@ -170,7 +173,51 @@ body {
     font-family: Arial;
     background-color: var(--zee);
     color: white;
-    text-transform: lowercase;
+    
+    font-size: 20px;
+    font-weight: 200;
+    padding: 4px 12px;
+    /* Binnenruimte */
+    border-radius: 2px;
+    /* Kleine hoekafronding */
+    display: inline-block;
+    /* Zorgt dat het blokje de juiste maat heeft */
+    margin-right: 8px;
+    /* Ruimte tussen label en titeltekst */
+    vertical-align: middle;
+    /* Lijnt netjes uit naast de titel */
+}
+
+.locatie-label-nieuw-west {
+    
+    margin-top: 10px;
+
+    font-family: Arial;
+    background-color:var(--paarsBlauw);
+    color: white;
+  
+    font-size: 20px;
+    font-weight: 200;
+    padding: 4px 12px;
+    /* Binnenruimte */
+    border-radius: 2px;
+    display: inline-block;
+    /* Zorgt dat het blokje de juiste maat heeft */
+    margin-right: 8px;
+    /* Ruimte tussen label en titeltekst */
+    vertical-align: middle;
+    /* Lijnt netjes uit naast de titel */
+}
+
+
+
+.locatie-label-alegmeen {
+    margin-top: 10px;
+    font-family: Arial;
+    background-color: var(--torenOranje);
+    color: white;
+    font-weight: 600;
+    
     font-size: 20px;
     font-weight: 200;
     padding: 4px 12px;
@@ -189,6 +236,7 @@ body {
     color: white;
     font-size: 25px;
     padding-top: 20px;
+   
 }
 
 @media (min-width: 678px) {
@@ -203,11 +251,13 @@ body {
     color: var(--paarsBlauw);
     font-size: 30px;
     padding-top: 20px;
+     font-family: Arial, Helvetica, sans-serif;
 }
 
 .koptekst3 {
     color: white;
     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
 }
 
 .tekst {
@@ -235,6 +285,118 @@ body {
         width: 500px;
     }
 }
+
+
+.gridmeerladen {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content repeat(8, 1fr);
+
+
+}
+
+
+.koptekstmeerladenpagina {
+
+    color: var(--paarsBlauw);
+    font-size: 36px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.tekstmeerladen1 {
+
+    width: 550px;
+    color: var(--paarsBlauw);
+    font-size: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /* height: 200px; */
+
+}
+
+
+
+.meerladenimg {
+
+    width: 530px;
+    height: 300px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
+}
+
+
+.tekstmeerladen2 {
+    width: 550px;
+    color: var(--paarsBlauw);
+    font-size: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.iconmeerladen {
+    left: 80px;
+    top: 150px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: sticky;
+
+
+    align-self: start;
+    /* ← maakt sticky mogelijk in een grid */
+    z-index: 10;
+    rotate: -7deg;
+    height: 80px;
+    width: 80px;
+    transform: scaleX(-1);
+    opacity: 0.7;
+}
+
+
+.iconmeerladen2 {
+
+    top: 200px;
+    left: 170px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: sticky;
+
+    align-self: start;
+    /* ← maakt sticky mogelijk in een grid */
+    z-index: 10;
+    rotate: -7deg;
+    height: 80px;
+    width: 80px;
+    opacity: 0.7;
+
+
+
+}
+
+
+
+
+
 
 .lees-meer_wit {
     font-family: arial;
@@ -305,42 +467,45 @@ body {
 
 .onderkantHeader {
 
-   
 
-     @media (min-width: 768px) {
-         display: flex;
-    justify-content: space-between;
-       
-      
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+
+
     }
 }
 
 .OverzichtFilteren {
-    
+
     opacity: 0;
     transition: 0.5s;
-     width: 100%;
+    width: 100%;
 
-      @media (min-width: 678px) {
-          width: 55%;
-       
+    @media (min-width: 678px) {
+        width: 55%;
+
     }
 
 }
 
 .OverzichtFilteren-visible {
-   
+
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 2px grey;
     margin-bottom: 30px;
     color: #333467;
-   
+
     opacity: 1;
 
-    @media (min-width: 678px) {
-        margin-left: 120px;
-    }
+    @media (min-width: 678px) {}
 }
 
 .overzicht {
@@ -351,13 +516,13 @@ body {
     margin-left: 20px;
     padding-left: 0px;
 
-      @media (min-width: 678px) {
-            grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 30px;
-    padding-left: 50px;
+    @media (min-width: 678px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 30px;
+        padding-left: 50px;
 
-       
+
     }
 }
 
@@ -370,7 +535,7 @@ body {
     height: 30px;
     margin-top: 8px;
     background-color: var(--torenOranje);
-    border-style:none;
+    border-style: none;
     color: white;
     font-size: 19px;
     height: 40px;
@@ -389,7 +554,7 @@ body {
     @media (min-width: 678px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
     }
 }
 
@@ -404,9 +569,11 @@ body {
     font-family: arial;
     background-color: var(--torenOranje);
     padding: 10px;
+    padding-left: 30px;
     color: white;
     border-radius: 8px;
     font-size: 26px;
+    font-weight: 600;
     border: none;
     display: flex;
     align-items: center;
@@ -419,10 +586,10 @@ body {
     }
 }
 
-.filterDoelgroep:hover{
+.filterDoelgroep:hover {
 
-        background-color: #333467;
-    }
+    background-color: #333467;
+}
 
 .icon {
     width: 32px;
@@ -443,9 +610,10 @@ body {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-end: 3;
         margin-left: 50px;
         margin-right: 20px;
+        height: 1000px;
     }
 }
 
@@ -486,8 +654,8 @@ body {
 
         grid-column-start: 1;
         grid-column-end: -1;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -499,6 +667,92 @@ body {
         margin-top: 110px;
     }
 }
+
+
+.HulpBijDigitaalNieuwsbrief {
+    margin-top: 50px;
+    padding-left: 30px;
+    background-color: var(--kauwgomRoze);
+    height: 480px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: 1px solid #dee3ed;
+
+    @media (min-width: 678px) {
+        margin-top: 50px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-left: 50px;
+        margin-right: 20px;
+      
+    }
+}
+
+
+.InterviewKristelLankhorst{
+     margin-top: 50px;
+    padding-left: 30px;
+    background-color: var(--luchtBlauw);
+    height: 920px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: 1px solid #dee3ed;
+
+    img{
+
+        height: 450px;
+        width: 700px;
+    }
+    p{
+    color: var(--paarsBlauw);
+    font-size: 18px;
+    line-height: 1.4rem;
+    width: 680px;
+
+
+    }
+
+    @media (min-width: 678px) {
+        margin-top: 50px;
+        grid-column-start: 4;
+        grid-column-end: -1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-left: 20px;
+        margin-right: 50px;
+      
+    }
+
+
+}
+
+
+.illustratie{
+
+    display: none;
+
+  
+
+
+@media (min-width: 678px) {
+    display: block;
+    grid-row-start: 2;
+    grid-row-end: 3;
+     grid-column: 6 / 7; 
+    padding-top: 100px;
+
+ 
+  
+    width: 150px;
+    height: 180px;
+     }
+
+}
+
 
 .nieuwe_look {
     width: 240px;
@@ -538,8 +792,8 @@ body {
     @media (min-width: 678px) {
         grid-column-start: 3;
         grid-column-end: -1;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
 }
 
