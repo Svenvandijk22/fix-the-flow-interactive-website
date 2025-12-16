@@ -1,3 +1,13 @@
+@keyframes fade-in{
+
+    from{
+        opacity: 1;
+    }
+
+    to{ opacity: 0;}
+}
+
+
 body {
     margin: 0;
 }
@@ -291,13 +301,17 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: min-content repeat(8, 1fr);
+    grid-template-rows: min-content repeat(4, 1fr);
 
 
 }
 
 
 .koptekstmeerladenpagina {
+    animation: fade-in linear;
+    animation-timeline: scroll();
+    animation-range: 0% 50%;
+
 
     color: var(--paarsBlauw);
     font-size: 36px;
@@ -312,6 +326,9 @@ body {
 
 
 .tekstmeerladen1 {
+    animation: fade-in linear;
+    animation-timeline: scroll();
+    animation-range: 0% 50%;
 
     width: 550px;
     color: var(--paarsBlauw);
@@ -328,6 +345,8 @@ body {
 
 
 .meerladenimg {
+    animation: fade-in linear;
+    animation-timeline: scroll();
 
     width: 530px;
     height: 300px;
@@ -518,7 +537,7 @@ body {
 
     @media (min-width: 678px) {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto;
         margin-left: 30px;
         padding-left: 50px;
 
@@ -533,12 +552,16 @@ body {
 
 .buttonOverzicht {
     height: 30px;
-    margin-top: 8px;
+    grid-column: 3/-1;
+    margin-top: 17px;
+ 
+
+  
     background-color: var(--torenOranje);
     border-style: none;
     color: white;
     font-size: 19px;
-    height: 40px;
+   
     padding-left: 15px;
     padding-right: 15px;
 
@@ -721,7 +744,7 @@ body {
         grid-column-start: 4;
         grid-column-end: -1;
         grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-end: 6;
         margin-left: 20px;
         margin-right: 50px;
       
@@ -750,6 +773,33 @@ body {
     width: 150px;
     height: 180px;
      }
+
+}
+
+
+.illustratie2{
+
+    display: none;
+
+  
+
+
+@media (min-width: 678px) {
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-top: 70px;
+
+ 
+  
+    width: 150px;
+    height: 180px;
+     }
+
+
+
 
 }
 
@@ -790,10 +840,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     @media (min-width: 678px) {
-        grid-column-start: 3;
+        grid-column-start: 1;
         grid-column-end: -1;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        width: 1350px;
+        margin-top: 50px;
+
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
@@ -817,6 +872,7 @@ body {
     border-style: solid;
     padding-left: 10px;
     font-size: 16px;
+    width: 400px;
 }
 
 .buttonlabel {
