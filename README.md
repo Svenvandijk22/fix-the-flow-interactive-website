@@ -10,6 +10,8 @@ In deze sprint heb ik de opdracht afgerond van de buurtcampuskrant ik heb de laa
 
 
 ## Beschrijving
+
+De buurtcampus krant is een platfrom van de buurtcampus waar alle artikelen in komen de relevant zijn voor amsterdam. Ik heb op mijn site de focus gelegdt om de buurtcampus krant feeling in de uiteindelijke prototype te krijgen
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
