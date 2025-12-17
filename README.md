@@ -5,7 +5,7 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the
 
 # Buurtcampus Krant
 
-In deze sprint heb ik de opdracht afgerond van de buurtcampuskrant ik heb de laatste toevoegingen gedaan dat waren de filterknop en het filterknop overzicht gemaakt ook de toevoeging van de detail pagina (de pagina met de gehele artikel) en ook  
+In deze sprint heb ik de opdracht afgerond van de buurtcampuskrant ik heb de laatste toevoegingen gedaan dat waren de filterknop en het filterknop overzicht gemaakt ook de toevoeging van de detail pagina (de pagina met de gehele artikel) en ook de illustraties gebruikt om wit ruimte op te vullen 
 
 
 
