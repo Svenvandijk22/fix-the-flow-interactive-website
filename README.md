@@ -3,8 +3,10 @@ Ontwerp en maak een interactieve website voor een opdrachtgever.
 
 De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
-Buurtcampus Krant
+# Buurtcampus Krant
+
+In deze sprint heb ik de opdracht afgerond van de buurtcampuskrant 
+
 
 
 ## Beschrijving
