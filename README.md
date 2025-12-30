@@ -24,8 +24,7 @@ De site maakt gebruik van de bestaande Buurtcampus huistijl , maar bevat ook eig
 
 <img width="1885" height="738" alt="Schermopname (148)" src="https://github.com/user-attachments/assets/5ffe7e8e-fb4d-476f-8159-d76478d4254f" />
 
-
-
+<img width="1884" height="912" alt="Schermopname (149)" src="https://github.com/user-attachments/assets/d3c2fa27-a8eb-411d-9174-9d18b76b134a" />
 
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -41,13 +40,17 @@ header → navigatie en logo
 
 main → alle artikelen samen
 
-section → logische contentblokken
+section →  contentblokken
 
 buttons → voor het formulier
 
 <a> voor navigatie (Lees meer)
-Voor de opmaak heb ik vooral gewerkt met CSS Grid en aparte component-classes.
-JavaScript heb ik vooral gebruikt om de filterfunctie te laten open- en dichtklappen. Dit heb ik gedaan met een simpel driestappenplan: het element selecteren, luisteren naar een klik en daarna een class toggelen.
+
+de artikelen zelf staan in een display Grid ik kon daarmee makkelijk de grote aangeven en kon daar tussen illustraties makkelijk plaatsen. Ook heb ik gebruik gemaakt van animation-play-state: running; in de header om de wolkjes bij een hover te laten bewegen
+
+
+
+JavaScript heb ik vooral gebruikt om de filterfunctie te laten open- en dichtklappen. Dit heb ik gedaan met het simpele driestappenplan: het element selecteren, luisteren naar een klik en daarna een class toggelen.
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
 ## Bronnen
